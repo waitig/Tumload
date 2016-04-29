@@ -186,7 +186,7 @@ class Ui_Dialog(object):
         self.label_4.setText(_translate("Dialog",
                                         "<html><head/><body><p>由于国内网速问题，请不要选择【保存视频到本地】将下载链接复制到迅雷中下载，效果最好！更多帮助请看<a href=\"http://www.waitig.com/soft/tumload-help.html\" target=\"_blank\">在线帮助文档</a></p></body></html>",
                                         None))
-        self.groupBox_3.setTitle(_translate("Dialog", "赞助链接", None))
+        self.groupBox_3.setTitle(_translate("Dialog", "广告赞助", None))
         self.Ad1.setText(_translate("Dialog", "AD1", None))
         self.Ad2.setText(_translate("Dialog", "AD2", None))
         self.Ad3.setText(_translate("Dialog", "AD3", None))
@@ -197,7 +197,8 @@ class Ui_Dialog(object):
         self.stopButton.setText(_translate("Dialog", "停止处理", None))
         self.label_5.setText(
             _translate("Dialog", "<a href=\"http://www.waitig.com/\" target=\"_blank\">等英博客</a>|荣耀出品|", None))
-        self.label_6.setText(_translate("Dialog", "<a href=\"http://www.waitig.com\">我要赞助！</a>", None))
+        self.label_6.setText(
+            _translate("Dialog", "<a href=\"http://www.waitig.com/soft/tumload-ads.html\">我要合作！</a>", None))
 
 
 from PyQt4 import QtWebKit
