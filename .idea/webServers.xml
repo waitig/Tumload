@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9f2f518f-ffbf-4a98-a6a4-d4eda637bc17" name="ali-root" url="http://114.215.124.17">
+        <fileTransfer host="114.215.124.17" port="22" accessType="SFTP" password="dfe6dfc3dfdfdfd9dfc2dfdfdfcbdfc3dfeadf9bdf93df93df98" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

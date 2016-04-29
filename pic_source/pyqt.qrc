@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+        <file alias="favico.ico">favico.ico</file>
+        <file alias="tumload.png">tumload.png</file>
+    </qresource>
+</RCC>
