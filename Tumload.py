@@ -21,9 +21,6 @@ import pyqt_rc
 #         super(ADThread,self).__init__(parent)
 #         self.tc=tc
 
-
-
-
 class WorkThread(QThread):
     def __int__(self, parent=None):
         super(WorkThread, self).__init__(parent)
