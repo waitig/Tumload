@@ -5,7 +5,7 @@
 # Desc:Tumblr下载器界面脚本
 # --------------------------------------
 import sys
-import thread, time, uuid
+import time, uuid
 from TumloadUI import Ui_Dialog
 from PyQt4 import QtCore, QtGui
 from PyQt4.QtCore import *
