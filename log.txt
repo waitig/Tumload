@@ -1,0 +1,27 @@
+[05-02 21:36:18]:Started to load:http://celenechen.tumblr.com/...
+[05-02 21:36:18]:Start to deal url : http://celenechen.tumblr.com/
+[05-02 21:36:20]:Start to deal video url : https://www.tumblr.com/video/celenechen/143617473419/500
+[05-02 21:36:22]:True url : https://vt.tumblr.com/tumblr_o6fl3juLdB1uektjl.mp4
+[05-02 21:36:22]:Start to deal video url : https://www.tumblr.com/video/celenechen/143573731381/500
+[05-02 21:36:23]:True url : https://vt.tumblr.com/tumblr_o6dymrn5Q81uektjl.mp4
+[05-02 21:36:23]:Start to deal video url : https://www.tumblr.com/video/celenechen/143480277417/500
+[05-02 21:36:23]:True url : https://vt.tumblr.com/tumblr_o6aogs9bmP1uektjl.mp4
+[05-02 21:36:23]:Start to deal video url : https://www.tumblr.com/video/celenechen/143480087995/500
+[05-02 21:36:26]:True url : https://vt.tumblr.com/tumblr_o6ao76fdJv1uektjl_480.mp4
+[05-02 21:36:26]:Start to deal video url : https://www.tumblr.com/video/celenechen/143471668073/500
+[05-02 21:36:29]:True url : https://vt.tumblr.com/tumblr_o6a7n7aYIQ1uektjl.mp4
+[05-02 21:36:29]:Start to deal video url : https://www.tumblr.com/video/celenechen/143463719935/500
+[05-02 21:36:30]:True url : https://vt.tumblr.com/tumblr_o69wz8Sbs21uektjl_480.mp4
+[05-02 21:36:30]:Start to deal video url : https://www.tumblr.com/video/celenechen/143314290456/500
+[05-02 21:36:31]:True url : https://vt.tumblr.com/tumblr_o64vbiAbnX1uektjl.mp4
+[05-02 21:36:31]:Start to deal video url : https://www.tumblr.com/video/celenechen/143295264833/500
+[05-02 21:36:31]:True url : https://vt.tumblr.com/tumblr_o64619hwH21uektjl_480.mp4
+[05-02 21:36:31]:Start to deal url : http://celenechen.tumblr.com/page/2
+[05-02 21:36:33]:Start to deal video url : https://www.tumblr.com/video/celenechen/143272251928/500
+[05-02 21:36:33]:True url : https://vt.tumblr.com/tumblr_o63gpehcxc1uektjl_480.mp4
+[05-02 21:36:33]:Start to deal video url : https://www.tumblr.com/video/celenechen/143204979508/500
+[05-02 21:36:34]:True url : https://vt.tumblr.com/tumblr_o60uxtHMy61uektjl_480.mp4
+[05-02 21:36:34]:Start to deal video url : https://www.tumblr.com/video/celenechen/143204749808/500
+[05-02 21:36:36]:True url : https://vt.tumblr.com/tumblr_o60uloYGUG1uektjl_480.mp4
+[05-02 21:36:36]:You are not vip ,only can get 10 urls each time!
+[05-02 21:36:36]:Loading End!
