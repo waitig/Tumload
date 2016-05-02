@@ -281,7 +281,7 @@ class TumblrClass:
         try:
             Reslut = self.se.post(self.chkUrl, headers=headers, data=postData)
             text = Reslut.text
-            # print text
+            print text
             if (1 == init):
                 decodeJson = json.loads(text)
                 self.TumloadClass.setAD1(decodeJson['ad1'])

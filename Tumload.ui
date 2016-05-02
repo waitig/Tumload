@@ -286,9 +286,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>80</y>
+      <y>70</y>
       <width>331</width>
-      <height>71</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -323,6 +323,22 @@
     </property>
     <property name="indent">
      <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>321</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>普通用户每次只能获取十个视频，&lt;a href='http://check.waitig.com/soft/tumload-vip.html'&gt;点此升级用户组&lt;/a&gt;！</string>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
