@@ -139,8 +139,12 @@ class TumblrClass:
         url = self.get_video_files(url)
         aHref = '<a href="' + url + '">' + url + '</a><br/>\n'
         self.video_url_file.write(aHref)
-        self.insertDownloadUrl(url)
         self.video_url_file.flush()
+        self.insertDownloadUrl(url)
+        if (self.videoNum > 10 and self.isVIP == 0):
+            self.log('You are not vip ,only can get 10 urls each time!')
+            self.insertDownloadUrl('You are not vip ,only can get 10 urls each time!')
+            return
         if (self.isSave == 1):
             self.log('Start to download video file : ' + url)
             fileName = url.replace('https://vt.tumblr.com/', '')
@@ -206,9 +210,6 @@ class TumblrClass:
             self.videoNum += 1
             self.setVideoNum(self.videoNum)
             self.save_video_file(videoUrl, self.video_path)
-            if (self.videoNum > 10 and self.isVIP == 0):
-                self.log('You are not vip ,only can get 10 urls each time!')
-                return
         nextUrls = re.findall('href=\"/page/(?P<next>\d+)\"', text)
         if (nextUrls != []):
             nextPage = str(self.curPage + 1)
