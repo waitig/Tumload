@@ -22,6 +22,7 @@ class TumblrClass:
         self.video_path = ''
         self.index_url = ''
         self.curPage = 1
+        self.isVIP = 0
         self.videoNum = 0
         self.isSave = 0
         self.exitIt = 0
@@ -70,6 +71,9 @@ class TumblrClass:
 
     def insertDownloadUrl(self, url):
         self.UI.insertDownloadUrl(url)
+
+    def setVIP(self, isVIP):
+        self.isVIP = isVIP
 
     def exit(self):
         self.exitIt = 1
@@ -202,6 +206,9 @@ class TumblrClass:
             self.videoNum += 1
             self.setVideoNum(self.videoNum)
             self.save_video_file(videoUrl, self.video_path)
+            if (self.videoNum > 10 and self.isVIP == 0):
+                self.log('You are not vip ,only can get 10 urls each time!')
+                return
         nextUrls = re.findall('href=\"/page/(?P<next>\d+)\"', text)
         if (nextUrls != []):
             nextPage = str(self.curPage + 1)
@@ -281,6 +288,7 @@ class TumblrClass:
                 self.TumloadClass.setAD2(decodeJson['ad2'])
                 self.TumloadClass.setAD3(decodeJson['ad3'])
                 self.TumloadClass.setTopUrl(str(decodeJson['topUrl']))
+                self.setVIP(decodeJson['isVIP'])
         except BaseException, e:
             print(str(e))
             pass

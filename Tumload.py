@@ -66,6 +66,7 @@ class TumloadClass(QtGui.QDialog, Ui_Dialog):
         Ui_Dialog.__init__(self)
         self.setupUi(self)
         self.isDebug = 1
+        self.isVIP = 0
         self.fileName = ''
         self.indexUrl = ''
         self.sourceUrl = ''
@@ -197,6 +198,10 @@ class TumloadClass(QtGui.QDialog, Ui_Dialog):
 
     def setTopUrl(self, url):
         self.webView.load(QtCore.QUrl(url))
+
+    def setVIP(self, isVIP):
+        self.isVIP = isVIP
+        self.tc.setVIP(isVIP)
 
     def check_ads(self):
         try:
