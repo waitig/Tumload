@@ -16,14 +16,11 @@ except AttributeError:
 
 try:
     _encoding = QtGui.QApplication.UnicodeUTF8
-
-
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig, _encoding)
 except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
-
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -168,6 +165,14 @@ class Ui_Dialog(object):
         self.label_6.setGeometry(QtCore.QRect(10, 439, 54, 31))
         self.label_6.setOpenExternalLinks(True)
         self.label_6.setObjectName(_fromUtf8("label_6"))
+        self.SN = QtGui.QLabel(Dialog)
+        self.SN.setGeometry(QtCore.QRect(220, 450, 31, 16))
+        self.SN.setObjectName(_fromUtf8("SN"))
+        self.sn_line = QtGui.QLineEdit(Dialog)
+        self.sn_line.setGeometry(QtCore.QRect(250, 450, 113, 20))
+        self.sn_line.setFrame(False)
+        self.sn_line.setReadOnly(True)
+        self.sn_line.setObjectName(_fromUtf8("sn_line"))
 
         self.retranslateUi(Dialog)
         self.tabWidget.setCurrentIndex(1)
@@ -186,7 +191,7 @@ class Ui_Dialog(object):
         self.label_4.setText(_translate("Dialog",
                                         "<html><head/><body><p>由于国内网速问题，请不要选择【保存视频到本地】将下载链接复制到迅雷中下载，效果最好！更多帮助请看<a href=\"http://www.waitig.com/soft/tumload-help.html\" target=\"_blank\">在线帮助文档</a></p></body></html>",
                                         None))
-        self.groupBox_3.setTitle(_translate("Dialog", "广告赞助", None))
+        self.groupBox_3.setTitle(_translate("Dialog", "赞助链接", None))
         self.Ad1.setText(_translate("Dialog", "AD1", None))
         self.Ad2.setText(_translate("Dialog", "AD2", None))
         self.Ad3.setText(_translate("Dialog", "AD3", None))
@@ -197,8 +202,7 @@ class Ui_Dialog(object):
         self.stopButton.setText(_translate("Dialog", "停止处理", None))
         self.label_5.setText(
             _translate("Dialog", "<a href=\"http://www.waitig.com/\" target=\"_blank\">等英博客</a>|荣耀出品|", None))
-        self.label_6.setText(
-            _translate("Dialog", "<a href=\"http://www.waitig.com/soft/tumload-ads.html\">我要合作！</a>", None))
-
+        self.label_6.setText(_translate("Dialog", "<a href=\"http://www.waitig.com\">我要赞助！</a>", None))
+        self.SN.setText(_translate("Dialog", "SN：", None))
 
 from PyQt4 import QtWebKit

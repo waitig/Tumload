@@ -97,7 +97,7 @@ class TumloadClass(QtGui.QDialog, Ui_Dialog):
             self.uid = str(uuid.uuid1())
             settings.setValue('uuid', self.uid)
         self.tc.set_uid(self.uid)
-
+        self.sn_line.setText(self.uid)
         self.check_ads()
         print 'tumload init end'
 
