@@ -121,10 +121,9 @@ class Ui_Dialog(object):
         self.logLabel.setWordWrap(True)
         self.logLabel.setIndent(1)
         self.logLabel.setObjectName(_fromUtf8("logLabel"))
-        self.label_7 = QtGui.QLabel(self.groupBox_2)
-        self.label_7.setGeometry(QtCore.QRect(10, 130, 321, 21))
-        self.label_7.setOpenExternalLinks(True)
-        self.label_7.setObjectName(_fromUtf8("label_7"))
+        self.vipText = QtGui.QLabel(self.groupBox_2)
+        self.vipText.setGeometry(QtCore.QRect(10, 130, 331, 21))
+        self.vipText.setObjectName(_fromUtf8("vipText"))
         self.groupBox_3 = QtGui.QGroupBox(Dialog)
         self.groupBox_3.setGeometry(QtCore.QRect(10, 390, 601, 61))
         self.groupBox_3.setObjectName(_fromUtf8("groupBox_3"))
@@ -170,10 +169,10 @@ class Ui_Dialog(object):
         self.label_6.setOpenExternalLinks(True)
         self.label_6.setObjectName(_fromUtf8("label_6"))
         self.SN = QtGui.QLabel(Dialog)
-        self.SN.setGeometry(QtCore.QRect(190, 450, 31, 16))
+        self.SN.setGeometry(QtCore.QRect(180, 450, 31, 16))
         self.SN.setObjectName(_fromUtf8("SN"))
         self.sn_line = QtGui.QLineEdit(Dialog)
-        self.sn_line.setGeometry(QtCore.QRect(220, 449, 231, 21))
+        self.sn_line.setGeometry(QtCore.QRect(210, 441, 231, 31))
         self.sn_line.setFrame(False)
         self.sn_line.setReadOnly(True)
         self.sn_line.setObjectName(_fromUtf8("sn_line"))
@@ -195,8 +194,8 @@ class Ui_Dialog(object):
         self.label_4.setText(_translate("Dialog",
                                         "<html><head/><body><p>由于国内网速问题，请不要选择【保存视频到本地】将下载链接复制到迅雷中下载，效果最好！更多帮助请看<a href=\"http://www.waitig.com/soft/tumload-help.html\" target=\"_blank\">在线帮助文档</a></p></body></html>",
                                         None))
-        self.label_7.setText(_translate("Dialog",
-                                        "普通用户每次只能获取十个视频，<a href=\'http://check.waitig.com/soft/tumload-vip.html\'>点此升级用户组</a>！",
+        self.vipText.setText(_translate("Dialog",
+                                        "<html><head/><body><p>您是<span style=\" color:#ff0000;\">【VIP用户】</span></p></body></html>",
                                         None))
         self.groupBox_3.setTitle(_translate("Dialog", "赞助链接", None))
         self.Ad1.setText(_translate("Dialog", "AD1", None))

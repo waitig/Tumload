@@ -325,28 +325,12 @@
      <number>1</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="vipText">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>130</y>
-      <width>241</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>普通用户每次只能获取十个视频，&lt;a href='http://check.waitig.com/soft/tumload-vip.html'&gt;点此升级&lt;/a&gt;！</string>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="vipText">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>130</y>
-      <width>101</width>
+      <width>331</width>
       <height>21</height>
      </rect>
     </property>
@@ -531,7 +515,7 @@
   <widget class="QLabel" name="SN">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>180</x>
      <y>450</y>
      <width>31</width>
      <height>16</height>
@@ -544,10 +528,10 @@
   <widget class="QLineEdit" name="sn_line">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>450</y>
+     <x>210</x>
+     <y>441</y>
      <width>231</width>
-     <height>21</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="frame">
