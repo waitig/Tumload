@@ -193,7 +193,7 @@ class Ui_Dialog(object):
         self.label.setText(_translate("Dialog", "共发现视频：", None))
         self.groupBox_2.setTitle(_translate("Dialog", "系统日志", None))
         self.label_4.setText(_translate("Dialog",
-                                        "<html><head/><body><p>由于国内网速问题，请不要选择【保存视频到本地】将下载链接复制到迅雷中下载，效果最好！更多帮助请看<a href=\"http://www.waitig.com/soft/tumload-help.html\" target=\"_blank\">在线帮助文档</a></p></body></html>",
+                                        "<html><head/><body><p>由于国内网速问题，请不要选择【保存视频到本地】将下载链接复制到迅雷中下载，效果最好！更多帮助请看<a href=\"http://www.waitig.com/tumload-help.html\" target=\"_blank\">在线帮助文档</a></p></body></html>",
                                         None))
         self.vipText.setText(_translate("Dialog",
                                         "<html><head/><body><p>您是<span style=\" color:#ff0000;\">【VIP用户】</span></p></body></html>",
@@ -210,7 +210,8 @@ class Ui_Dialog(object):
         self.label_5.setText(
             _translate("Dialog", "<a href=\"http://www.waitig.com/\" target=\"_blank\">等英博客</a>|荣耀出品|", None))
         self.label_6.setText(
-            _translate("Dialog", "<a href=\"http://www.waitig.com\" target=\"_blank\">我要赞助！</a>", None))
+            _translate("Dialog", "<a href=\"http://www.waitig.com/tumload-ads.html\" target=\"_blank\">我要赞助！</a>",
+                       None))
         self.SN.setText(_translate("Dialog", "SN：", None))
 
 from PyQt4 import QtWebKit

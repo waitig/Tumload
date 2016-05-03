@@ -270,7 +270,7 @@
      <bool>true</bool>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;由于国内网速问题，请不要选择【保存视频到本地】将下载链接复制到迅雷中下载，效果最好！更多帮助请看&lt;a href=&quot;http://www.waitig.com/soft/tumload-help.html&quot; target=&quot;_blank&quot;&gt;在线帮助文档&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;由于国内网速问题，请不要选择【保存视频到本地】将下载链接复制到迅雷中下载，效果最好！更多帮助请看&lt;a href=&quot;http://www.waitig.com/tumload-help.html&quot; target=&quot;_blank&quot;&gt;在线帮助文档&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -509,7 +509,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>&lt;a href=&quot;http://www.waitig.com/soft/tumload-ads.html&quot; target=&quot;_blank&quot;&gt;我要赞助！&lt;/a&gt;</string>
+    <string>&lt;a href=&quot;http://www.waitig.com/tumload-ads.html&quot; target=&quot;_blank&quot;&gt;我要赞助！&lt;/a&gt;</string>
    </property>
    <property name="openExternalLinks">
     <bool>true</bool>

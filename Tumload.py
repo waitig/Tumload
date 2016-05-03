@@ -203,7 +203,7 @@ class TumloadClass(QtGui.QDialog, Ui_Dialog):
         self.isVIP = isVIP
         if (self.isVIP == 0):
             self.vipText.setText(
-                u'您是【普通用户】 普通用户每次只能获取十个视频，<a href="http://check.waitig.com/soft/tumload-vip.html" target="_blank">点此升级</a>！')
+                u'您是【普通用户】 普通用户每次只能获取十个视频，<a href="http://www.waitig.com/tumload-vip.html" target="_blank">点此升级</a>！')
         else:
             self.vipText.setText(u'您是<span style=" color:#ff0000;">【VIP用户】</span> VIP用户使用无限制，感谢您的支持！')
 
