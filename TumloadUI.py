@@ -123,6 +123,7 @@ class Ui_Dialog(object):
         self.logLabel.setObjectName(_fromUtf8("logLabel"))
         self.vipText = QtGui.QLabel(self.groupBox_2)
         self.vipText.setGeometry(QtCore.QRect(10, 130, 331, 21))
+        self.vipText.setOpenExternalLinks(True)
         self.vipText.setObjectName(_fromUtf8("vipText"))
         self.groupBox_3 = QtGui.QGroupBox(Dialog)
         self.groupBox_3.setGeometry(QtCore.QRect(10, 390, 601, 61))
@@ -208,7 +209,8 @@ class Ui_Dialog(object):
         self.stopButton.setText(_translate("Dialog", "停止处理", None))
         self.label_5.setText(
             _translate("Dialog", "<a href=\"http://www.waitig.com/\" target=\"_blank\">等英博客</a>|荣耀出品|", None))
-        self.label_6.setText(_translate("Dialog", "<a href=\"http://www.waitig.com\">我要赞助！</a>", None))
+        self.label_6.setText(
+            _translate("Dialog", "<a href=\"http://www.waitig.com\" target=\"_blank\">我要赞助！</a>", None))
         self.SN.setText(_translate("Dialog", "SN：", None))
 
 from PyQt4 import QtWebKit

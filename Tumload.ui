@@ -337,6 +337,9 @@
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;您是&lt;span style=&quot; color:#ff0000;&quot;&gt;【VIP用户】&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_3">
@@ -506,7 +509,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>&lt;a href=&quot;http://www.waitig.com&quot;&gt;我要赞助！&lt;/a&gt;</string>
+    <string>&lt;a href=&quot;http://www.waitig.com/soft/tumload-ads.html&quot; target=&quot;_blank&quot;&gt;我要赞助！&lt;/a&gt;</string>
    </property>
    <property name="openExternalLinks">
     <bool>true</bool>
