@@ -57,6 +57,12 @@ class TumblrClass:
             'Cache-Control': 'max-age=0'
         }
 
+    def setProxy(self,hostIp,port):
+        self.se.proxies={"http":hostIp+':'+port,
+                         "https":hostIp+':'+port}
+        self.log('Use proxy :'+hostIp+':'+port)
+        #pass
+
     def set_uid(self, uid):
         self.uid = uid
 
@@ -122,16 +128,16 @@ class TumblrClass:
         }
         Reslut = self.se.get(url, headers=self.headers)
         sourceUrl = ''
-        sourceUrls = re.findall('src=\"(?P<video_urls>https://www.tumblr.com/video_file/\d+/[^\"]*?)\"', Reslut.text)
+        sourceUrls = re.findall('src=\"(?P<video_urls>https://www.tumblr.com/video_file/[^/]*?/\d+/[^\"]*?)\"', Reslut.text)
         if (sourceUrls != []):
             sourceUrl = sourceUrls[0]
         SourceType = ''
         SourceTypes = re.findall('type=\"video/(?P<vide_type>[^\"]*?)\"', Reslut.text)
         if (SourceTypes != []):
             SourceType = SourceTypes[0]
-        sourceUrl = re.sub('https://www.tumblr.com/video_file/\d+/', '', sourceUrl)
+        sourceUrl = re.sub('https://www.tumblr.com/video_file/[^/]*?/\d+/', '', sourceUrl)
         sourceUrl = sourceUrl.replace('/', '_')
-        sourceUrl = 'https://vt.tumblr.com/' + sourceUrl
+        sourceUrl = 'https://vtt.tumblr.com/' + sourceUrl
         trueUrl = sourceUrl + '.' + SourceType
         self.log('True url : ' + trueUrl)
         return trueUrl

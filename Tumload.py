@@ -30,18 +30,25 @@ class WorkThread(QThread):
         self.isSave = None
         self.tc = None
 
-    def setParam(self, tc, type, sourceUrl, isSave):
+    def setParam(self, tc, type, sourceUrl, isSave,proxyHost,proxyPort,setProxy):
         self.mutex = QMutex()  # Locker
         self.tc = tc
         self.type = type
         self.sourceUrl = sourceUrl
         self.isSave = isSave
+        self.proxyHost = proxyHost
+        self.proxyPort = proxyPort
+        self.setProxy = setProxy
+
 
     def run(self):
         with QMutexLocker(self.mutex):
             self.stoped = False
         self.tc.reset()
         self.tc.setUIClass(self)
+        print self.setProxy
+        if (self.setProxy == 1):
+            self.tc.setProxy(self.proxyHost,self.proxyPort)
         self.tc.main(self.type, self.sourceUrl, self.isSave)
         self.emit(QtCore.SIGNAL('loadingEnd'))
 
@@ -102,10 +109,10 @@ class TumloadClass(QtGui.QDialog, Ui_Dialog):
         self.check_ads()
         print 'tumload init end'
 
-    def initThread(self, type, sourceUrl, isSave):
+    def initThread(self, type, sourceUrl, isSave,proxyHost,proxyPort,setProxy):
         self.wk = None
         self.wk = WorkThread()
-        self.wk.setParam(self.tc, type, sourceUrl, isSave)
+        self.wk.setParam(self.tc, type, sourceUrl, isSave ,proxyHost,proxyPort,setProxy)
         self.connect(self.wk, QtCore.SIGNAL("loadingEnd"), self.loadingEnd)
         self.connect(self.wk, QtCore.SIGNAL("updateLog"), self.log)
         self.connect(self.wk, QtCore.SIGNAL("setVideoNum"), self.setVideoNum)
@@ -123,6 +130,15 @@ class TumloadClass(QtGui.QDialog, Ui_Dialog):
     def debug(self, log):
         if self.isDebug == 1:
             print log
+
+    def getProxyText(self):
+        self.proxyIps = str(self.proxyHost.text())
+        self.proxyPorts = str(self.proxyPort.text())
+        #setProxy = self.setProxy
+        if(self.setProxy.isChecked()):
+            self.setProxys=1
+        else:
+            self.setProxys=0
 
     def readSettings(self):
         settings = QSettings('tumloadSetting')
@@ -148,6 +164,7 @@ class TumloadClass(QtGui.QDialog, Ui_Dialog):
     def startLoad(self):
         isSave = self.comboBox.currentIndex()
         type = self.tabWidget.currentIndex()
+
         if (type == 0):
             self.sourceUrl = str(self.fileName)
         elif (type == 1):
@@ -159,7 +176,8 @@ class TumloadClass(QtGui.QDialog, Ui_Dialog):
         #    thread.start_new_thread(self.loadThread, (type, self.sourceUrl, isSave))
         # except:
         #    print "Error: unable to start thread"
-        self.initThread(type, self.sourceUrl, isSave)
+        self.getProxyText()
+        self.initThread(type, self.sourceUrl, isSave,self.proxyIps,self.proxyPorts,self.setProxys)
         self.startThread()
 
     def stopLoad(self):
