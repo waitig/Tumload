@@ -144,13 +144,28 @@ class TumloadClass(QtGui.QDialog, Ui_Dialog):
         settings = QSettings('tumloadSetting')
         self.fileName = str(settings.value('fileName').toString())
         self.indexUrl = str(settings.value('indexUrl').toString())
+        self.proxyHosts = str(settings.value('proxyHost').toString())
+        if(self.proxyHosts == ''):
+            self.proxyHosts='http://127.0.0.1'
+        self.proxyPorts = str(settings.value('proxyPort').toString())
+        if(self.proxyPorts == ''):
+            self.proxyPorts='1080'
         self.fileEdit.setText(self.fileName)
         self.urlEdit.setText(self.indexUrl)
+        self.proxyHost.setText(self.proxyHosts)
+        self.proxyPort.setText(self.proxyPorts)
+        self.setProxy.setChecked(False)
 
     def writeSettings(self):
         settings = QSettings('tumloadSetting')
         settings.setValue('fileName', self.fileName)
         settings.setValue('indexUrl', self.indexUrl)
+        settings.setValue('proxyHost',self.proxyHosts)
+        settings.setValue('proxyPort',self.proxyPorts)
+        if(self.setProxy.isChecked()):
+            settings.setValue('setProxy','1')
+        else:
+            settings.setValue('setProxy','0')
 
     def showDialog(self):
         file_Name = QtGui.QFileDialog.getOpenFileName(self, 'Open file', self.fileName)
